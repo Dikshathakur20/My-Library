@@ -1,0 +1,29 @@
+body{ font-family: sans-serif;background: #f4f4f4; padding: 20px;}
+header{display:flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+
+#library-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card{
+    background:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-card h3{ margin: 0; color: #333;}
+.read-status{ font-weight: bold; color:#666;}
+
+button{cursor: pointer; padding:8px 12px; border-radius: 4px; border: none;}
+#new-book-btn {background: #2ecc71; color:white; font-size:1rem;}
+.remove-btn{ background: #e74c3c; color: white; margin-top: auto;}
+.toggle-btn{background: #3498db; color:white }
+
+dialog{border-radius: 8px; border: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2);}
+form { display: flex; flex-direction: column; gap: 15px; width: 300px; }
